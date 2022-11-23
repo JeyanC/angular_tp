@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AWS Cognito</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/">Home Page</a></li>
+      <li routerLinkActive="active"><a routerLink="/restapi">Rest Call</a></li>
+      <li routerLinkActive="active"><a routerLink="/register">Register</a></li>
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+<!--      <a style="padding: 10px" routerLinkActive="active" *ngIf="_auth.isLoggedIn()" routerLink="./restapi">Rest Call</a>-->
+<!--      <a style="padding: 10px" routerLinkActive="active" *ngIf="!_auth.isLoggedIn()" routerLink="./register">Register</a>-->
+<!--      <a style="padding: 10px" routerLinkActive="active" *ngIf="!_auth.isLoggedIn()" routerLink="./login">Login</a>-->
+<!--      <a style="padding: 10px" *ngIf="_auth.isLoggedIn()" (click)="doLogout()">Logout</a>-->
+    </ul>
+  </div>
+</nav>

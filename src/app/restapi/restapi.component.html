@@ -1,0 +1,30 @@
+<style>
+  table {
+    border-collapse: separate;
+    border-spacing: 50px 0;
+  }
+  td {
+    padding: 10px 0;
+  }
+</style>
+<section class="container">
+  <h2>Rest Api Output</h2>
+  <table align="center">
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Year</th>
+      <th>Publisher</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of _books">
+      <td>{{book.title}}</td>
+      <td>{{book.rating}}</td>
+      <td>{{book.year}}</td>
+      <td>{{book.publisher}}</td>
+    </tr>
+    </tbody>
+  </table>
+</section>
